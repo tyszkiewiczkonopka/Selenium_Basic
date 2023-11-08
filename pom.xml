@@ -16,6 +16,7 @@
         <assertj.version>3.22.0</assertj.version>
         <selenium.version>4.15.0</selenium.version>
         <lombok.version>1.18.24</lombok.version>
+        <logback.version>1.4.11</logback.version>
     </properties>
     <dependencies>
         <dependency>
@@ -46,6 +47,18 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
     </dependencies>
     <build>
         <pluginManagement>
