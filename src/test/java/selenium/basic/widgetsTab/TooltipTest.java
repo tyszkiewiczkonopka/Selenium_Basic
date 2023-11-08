@@ -1,8 +1,10 @@
+package selenium.basic.widgetsTab;
+
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import selenium.basic.BaseTest;
 
-public class TooltipClass extends BaseTest {
+public class TooltipTest extends BaseTest {
     @Test
     void tooltipTest() {
         driver.get(BASE_URL + "/tooltip.php");

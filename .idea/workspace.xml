@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c0b4e2-ac5e-4ced-b0c3-a612e96d61f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AlertsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/IframesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SliderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TooltipClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WindowsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="58c0b4e2-ac5e-4ced-b0c3-a612e96d61f5" name="Changes" comment="Add private methods to form test class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/interactionsTab/DroppableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/interactionsTab/SelectableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/othersTab/HighSiteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AlertsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/AlertsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/FormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IframesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/IframesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SliderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/widgetsTab/SliderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/TableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TooltipClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/widgetsTab/TooltipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WindowsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/WindowsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +33,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -49,7 +47,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -57,62 +55,66 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TooltipClass.tooltipTest">
-    <configuration name="SliderTestOnSlider.sliderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HighSiteTest.scrollTest">
+    <configuration name="AlertsTest.should_simple_alert_show_message_after_clicking_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_Basic" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SliderTestOnSlider" />
-      <option name="METHOD_NAME" value="sliderTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.basic.basicTab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.basic.basicTab" />
+      <option name="MAIN_CLASS_NAME" value="selenium.basic.basicTab.AlertsTest" />
+      <option name="METHOD_NAME" value="should_simple_alert_show_message_after_clicking_ok" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SliderTest.sliderTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DroppableTest.droppableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_Basic" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SliderTest" />
-      <option name="METHOD_NAME" value="sliderTest(int)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.basic.interactionsTab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.basic.interactionsTab" />
+      <option name="MAIN_CLASS_NAME" value="selenium.basic.interactionsTab.DroppableTest" />
+      <option name="METHOD_NAME" value="droppableTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SliderTest.sliderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighSiteTest.scrollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_Basic" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SliderTest" />
-      <option name="METHOD_NAME" value="sliderTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.basic.othersTab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.basic.othersTab" />
+      <option name="MAIN_CLASS_NAME" value="selenium.basic.othersTab.HighSiteTest" />
+      <option name="METHOD_NAME" value="scrollTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SliderTest.sliderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectableTest.selectableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_Basic" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SliderTest" />
-      <option name="METHOD_NAME" value="sliderTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SliderTest.sliderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_Basic" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SliderTest" />
-      <option name="METHOD_NAME" value="sliderTest(int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TooltipClass.tooltipTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_Basic" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TooltipClass" />
-      <option name="METHOD_NAME" value="tooltipTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.basic.interactionsTab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.basic.interactionsTab" />
+      <option name="MAIN_CLASS_NAME" value="selenium.basic.interactionsTab.SelectableTest" />
+      <option name="METHOD_NAME" value="selectableTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,8 +122,14 @@
     </configuration>
     <configuration name="WindowsTest.windowsTab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_Basic" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WindowsTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.basic.basicTab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.basic.basicTab" />
+      <option name="MAIN_CLASS_NAME" value="selenium.basic.basicTab.WindowsTest" />
       <option name="METHOD_NAME" value="windowsTab" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -130,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TooltipClass.tooltipTest" />
-        <item itemvalue="JUnit.SliderTest.sliderTest" />
-        <item itemvalue="JUnit.SliderTest.sliderTest" />
-        <item itemvalue="JUnit.SliderTest.sliderTest" />
-        <item itemvalue="JUnit.SliderTest.sliderTest (1)" />
+        <item itemvalue="JUnit.HighSiteTest.scrollTest" />
+        <item itemvalue="JUnit.SelectableTest.selectableTest" />
+        <item itemvalue="JUnit.DroppableTest.droppableTest" />
+        <item itemvalue="JUnit.AlertsTest.should_simple_alert_show_message_after_clicking_ok" />
+        <item itemvalue="JUnit.WindowsTest.windowsTab" />
       </list>
     </recent_temporary>
   </component>

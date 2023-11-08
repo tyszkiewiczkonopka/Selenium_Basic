@@ -1,7 +1,9 @@
+package selenium.basic.basicTab;
+
 import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import selenium.basic.BaseTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

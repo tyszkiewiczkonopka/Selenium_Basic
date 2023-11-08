@@ -1,3 +1,5 @@
+package selenium.basic.widgetsTab;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.By;
@@ -5,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import selenium.basic.BaseTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
