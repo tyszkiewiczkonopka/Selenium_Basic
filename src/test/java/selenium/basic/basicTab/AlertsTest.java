@@ -1,9 +1,14 @@
 package selenium.basic.basicTab;
 
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import selenium.basic.BaseTest;
+
+import java.time.Duration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -54,6 +59,21 @@ public class AlertsTest extends BaseTest {
         String actualDismissMessage = driver.findElement(By.id("confirm-label")).getText();
 
         assertThat(expectedDismissMessage).isEqualTo(actualDismissMessage);
+
+    }
+
+    @Test
+    void delayedAlert(){
+        driver.get(BASE_URL + "/alerts.php");
+        driver.findElement(By.id("delayed-alert")).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.alertIsPresent());
+        driver.switchTo().alert().accept();
+        String expectedOkMessage = "OK button pressed";
+        String actualOkMessage = driver.findElement(By.id("delayed-alert-label")).getText();
+
+        assertThat(actualOkMessage).isEqualTo(expectedOkMessage);
 
     }
 }

@@ -17,6 +17,7 @@ public class BaseTest {
 //      options.addArguments(DEFAULT_DIRECTORY);
 
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
     }
 
     @AfterEach
