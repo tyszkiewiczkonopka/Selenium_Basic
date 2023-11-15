@@ -1,6 +1,6 @@
 package selenium.basic.basicTab;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.RepeatedTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,12 +10,10 @@ import java.util.List;
 
 public class TableTest extends BaseTest {
 
-    @Test
+    @RepeatedTest(value = 10)
     void should_print_swiss_mountain_higher_than_4000() {
-
         driver.get(BASE_URL + "/table.php");
         findInTable(driver);
-
     }
 
     public void findInTable(WebDriver driver) {

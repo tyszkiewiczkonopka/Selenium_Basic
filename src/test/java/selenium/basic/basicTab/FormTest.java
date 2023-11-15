@@ -1,12 +1,9 @@
 package selenium.basic.basicTab;
 
 import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import selenium.basic.BaseTest;
 
 import java.util.List;
@@ -16,13 +13,11 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class FormTest extends BaseTest {
     private final Random random = new Random();
-    private Logger logger = LoggerFactory.getLogger("FormTest");
-
-    @RepeatedTest(value = 10, name = RepeatedTest.LONG_DISPLAY_NAME)
+    @RepeatedTest(value = 10)
     void should_successfully_sign_in() {
         driver.get(BASE_URL + "/form.php");
 
-        fillform();
+        fillForm();
         chooseFileToUpload();
         submitForm();
 
@@ -36,7 +31,7 @@ public class FormTest extends BaseTest {
     }
 
 
-    private void fillform() {
+    private void fillForm() {
         driver.findElement(By.id("inputFirstName3")).sendKeys("Magdalena");
         driver.findElement(By.id("inputLastName3")).sendKeys("Tyszkiewicz");
         driver.findElement(By.id("inputEmail3")).sendKeys("mtyszkiewicz@sii.pl");

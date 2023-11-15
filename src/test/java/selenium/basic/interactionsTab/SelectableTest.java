@@ -1,5 +1,6 @@
 package selenium.basic.interactionsTab;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,8 +13,8 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SelectableTest extends BaseTest {
-    @Test
-    void selectableTest() {
+    @RepeatedTest(value = 10)
+    void text_should_show_all_selected_items() {
         driver.get(BASE_URL + "/selectable.php");
         List<WebElement> items = driver.findElements(By.cssSelector(".ui-selectee"));
 
@@ -26,9 +27,7 @@ public class SelectableTest extends BaseTest {
                 .keyUp(Keys.CONTROL)
                 .perform();
 
-        List<WebElement> selectedItems = driver.findElements(By.cssSelector(".ui-selected"));
         String selectedText = driver.findElement(By.id("feedback")).getText();
         assertThat(selectedText).isEqualTo("You've selected: #1 #3 #4.");
-
     }
 }

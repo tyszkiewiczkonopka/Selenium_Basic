@@ -12,11 +12,11 @@ import selenium.basic.BaseTest;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SliderTest extends BaseTest {
-    private Logger logger = LoggerFactory.getLogger("SliderTestOnSlider");
+    private final Logger logger = LoggerFactory.getLogger("SliderTestOnSlider");
 
     @ParameterizedTest
     @ValueSource(ints = {50, 80, 80, 20, 0})
-    void sliderTest(int targetValue) {
+    void slider_should_move_to_given_value(int targetValue) {
         driver.get(BASE_URL + "/slider.php");
         WebElement handle = driver.findElement(By.id("custom-handle"));
         moveSliderHandle(handle, targetValue);
