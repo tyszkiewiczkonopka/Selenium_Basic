@@ -6,6 +6,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import selenium.basic.BaseTest;
 
 import java.time.Duration;
@@ -18,10 +20,12 @@ public class AutocompleteTest extends BaseTest {
 
     @RepeatedTest(value = 10)
     void should_show_randomly_chosen_value_in_search_input() {
+
         driver.get(BASE_URL + "/autocomplete.php");
         WebElement searchInput = driver.findElement(By.id("search"));
 
         List<WebElement> validOptions = getValidOptions();
+
         String randomValidOption = chooseRandomOption(validOptions);
         String inputText = getInputText(searchInput);
 

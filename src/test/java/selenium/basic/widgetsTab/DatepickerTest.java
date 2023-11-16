@@ -25,7 +25,7 @@ public class DatepickerTest extends BaseTest {
     private final Logger logger = LoggerFactory.getLogger("DatepickerTest");
 
     @Test
-    void datepickerTest() {
+    void should_show_date_in_input_as_picked_in_calendar() {
         driver.get(BASE_URL + "/datepicker.php");
         WebElement dateInput = driver.findElement(By.id("datepicker"));
 
@@ -46,9 +46,6 @@ public class DatepickerTest extends BaseTest {
 
         LocalDate randomDate = selectRandomDatePreviousYear(dateInput);
         assertDate(dateInput, randomDate);
-
-
-
     }
 
     private void selectToday(WebElement dateInput) {
@@ -75,10 +72,6 @@ public class DatepickerTest extends BaseTest {
         goToDesiredMonthAndYear("January", LocalDate.now().getYear() + 1, "a.ui-datepicker-next");
         WebElement day = driver.findElement(By.xpath("(.//*[text()='31'])[2]"));
         day.click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(By.cssSelector("a.ui-datepicker" +
-                "-next"))));
-
     }
 
     private void goToDesiredMonthAndYear(String desiredMonth, int desiredYear, String monthSelector) {
@@ -101,27 +94,27 @@ public class DatepickerTest extends BaseTest {
 
     private String selectRandomDayPreviousMonth(WebElement dateInput) {
         logger.info("RANDOM DAY FROM PREVIOUS MONTH");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
         dateInput.clear();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        wait.until(driver -> js.executeScript("return arguments[0].value", dateInput) == "");
         dateInput.click();
-        WebElement previousMonthButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".ui" +
-                "-datepicker-prev")));
-        previousMonthButton.click();
-        return selectRandomDay();
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement previousMonthButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".ui-datepicker-prev")));
+        previousMonthButton.click();
+
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ui-datepicker-loading")));
+        dateInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("datepicker")));
+
+        return selectRandomDay();
     }
 
     private String selectRandomDay() {
         List<WebElement> clickableDates = driver.findElements(By.cssSelector(".ui-datepicker-calendar a:not(.ui-priority-secondary)"));
         int randomIndex = new Random().nextInt(clickableDates.size());
         WebElement randomSelectedDay = clickableDates.get(randomIndex);
-        String zzzz = randomSelectedDay.getText();
-        logger.info("Random day: " + zzzz);
+        String randomSelectedDayText = randomSelectedDay.getText();
+        logger.info("Random day: " + randomSelectedDayText);
         randomSelectedDay.click();
-        return zzzz;
+        return randomSelectedDayText;
     }
 
 
