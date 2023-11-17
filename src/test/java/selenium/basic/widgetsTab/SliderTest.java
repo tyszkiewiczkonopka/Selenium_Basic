@@ -20,8 +20,7 @@ public class SliderTest extends BaseTest {
         driver.get(BASE_URL + "/slider.php");
         WebElement handle = driver.findElement(By.id("custom-handle"));
         moveSliderHandle(handle, targetValue);
-        assertThat(targetValue)
-                .isEqualTo(getSliderValue(handle));
+        assertThat(targetValue).isEqualTo(getSliderValue(handle));
         logger.info("Slider moved to target value of " + targetValue);
     }
 

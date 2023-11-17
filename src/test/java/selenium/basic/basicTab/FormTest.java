@@ -24,10 +24,7 @@ public class FormTest extends BaseTest {
         String validationSuccessMessage = "Form send with success";
         String actualMessage = driver.findElement(By.id("validator-message")).getText();
 
-        assertThat(actualMessage)
-                .withFailMessage("Validation message not as expected.")
-                .isEqualTo(validationSuccessMessage);
-
+        assertThat(actualMessage).isEqualTo(validationSuccessMessage);
     }
 
 
@@ -60,7 +57,7 @@ public class FormTest extends BaseTest {
     }
 
     private void chooseFileToUpload() {
-        String uploadedFileDirectory = "/Users/magdalena/Documents/GRAFIKA/Ikony/PNG/basen.png";
+        String uploadedFileDirectory = System.getProperty("user.dir")+ "\\src\\test\\resources\\files\\search-bug.jpg";
         driver.findElement(By.id("chooseFile")).sendKeys(uploadedFileDirectory);
     }
 

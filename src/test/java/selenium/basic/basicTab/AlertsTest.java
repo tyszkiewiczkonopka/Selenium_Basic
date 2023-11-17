@@ -51,7 +51,7 @@ public class AlertsTest extends BaseTest {
         String expectedDismissMessage = "You pressed Cancel!";
         String actualDismissMessage = driver.findElement(By.id("confirm-label")).getText();
 
-        assertThat(expectedDismissMessage).isEqualTo(actualDismissMessage);
+        assertThat(actualDismissMessage).isEqualTo(expectedDismissMessage);
 
     }
 

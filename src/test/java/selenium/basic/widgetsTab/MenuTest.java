@@ -13,10 +13,8 @@ import java.time.Duration;
 public class MenuTest extends BaseTest {
     @RepeatedTest(value = 10)
     void should_choose_modern_music_from_menu() {
-
         driver.get(BASE_URL + "/menu-item.php");
         chooseModernMusic();
-
     }
 
     private void chooseModernMusic() {

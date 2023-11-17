@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58c0b4e2-ac5e-4ced-b0c3-a612e96d61f5" name="Changes" comment="Add almost every method except from datapicker">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/files/search-bug.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/basic/widgetsTab/AutocompleteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/widgetsTab/AutocompleteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/basic/widgetsTab/DatepickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/widgetsTab/DatepickerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/AlertsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/AlertsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/FormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/basic/basicTab/FormTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +26,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tyszkiewiczkonopka"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tyszkiewiczkonopka&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -60,7 +62,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AutocompleteTest.should_show_randomly_chosen_value_in_search_input">
+  <component name="RunManager" selected="JUnit.FormTest.should_successfully_sign_in">
     <configuration name="AutocompleteTest.should_show_randomly_chosen_value_in_search_input" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_Basic" />
       <extension name="coverage">
@@ -77,17 +79,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatepickerTest.should_show_date_in_input_as_picked_in_calendar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FormTest.should_successfully_sign_in" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenium.basic.widgetsTab.*" />
+          <option name="PATTERN" value="selenium.basic.basicTab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenium.basic.widgetsTab" />
-      <option name="MAIN_CLASS_NAME" value="selenium.basic.widgetsTab.DatepickerTest" />
-      <option name="METHOD_NAME" value="should_show_date_in_input_as_picked_in_calendar" />
+      <option name="PACKAGE_NAME" value="selenium.basic.basicTab" />
+      <option name="MAIN_CLASS_NAME" value="selenium.basic.basicTab.FormTest" />
+      <option name="METHOD_NAME" value="should_successfully_sign_in" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FormTest.should_successfully_sign_in" />
         <item itemvalue="JUnit.AutocompleteTest.should_show_randomly_chosen_value_in_search_input" />
         <item itemvalue="JUnit.HighSiteTest.screenshot_should_show_submit_button_at_30_percent_after_scrolling_with_action_class" />
         <item itemvalue="JUnit.HighSiteTest.screenshot_should_show_submit_button_at_30_percent_after_scrolling_with_javascript" />
         <item itemvalue="JUnit.basic in Selenium_Basic" />
-        <item itemvalue="JUnit.DatepickerTest.should_show_date_in_input_as_picked_in_calendar" />
       </list>
     </recent_temporary>
   </component>

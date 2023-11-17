@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import selenium.basic.BaseTest;
 
-import java.time.Duration;
 
 public class ResizableTest extends BaseTest {
     private final Logger logger = LoggerFactory.getLogger("ResizableTest");
